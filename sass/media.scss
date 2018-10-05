@@ -1,0 +1,560 @@
+@media screen and (max-width: 1199px){
+  .gubarev__slovo{
+    padding-top: 50px;
+  }
+  #gubarev-accost{
+    height: 600px;
+  }
+  .gubarev-accost{
+    &__text,&__foto{
+      height: 600px;
+      img{
+        left: -200px;
+      }
+      &__wrapper{
+        height: 420px;
+      }
+    }
+  }
+  #biography{
+    padding-top: 35px;
+    padding-bottom: 30px;
+  }
+  .biography{
+    &__header{
+      padding-left: 5px;
+    }
+    &__tabs{
+      padding-right: 110px;
+      padding-left: 5px;
+    }
+    &__news{
+      &__card{
+        &__img{
+          height: 195px;
+        }
+      }
+    }
+  }
+  #quote{
+    padding: 55px 0 35px 0;
+  }
+  .quote{
+    &__text{
+      padding: 35px 25px;
+    }
+  }
+  #news-blog{
+    padding-top: 45px;
+  }
+  .news-blog{
+    &__body{
+      &__card{
+        margin-bottom: 20px;
+        &__img{
+          height: 170px;
+        }
+      }
+    }
+  }
+  #team{
+    padding: 40px 15px;
+  }
+  .team{
+    &__body{
+      &__card{
+        width: 310px;
+        &__face{
+          top: -130px;
+          img{
+            width: 85%;
+            top: 130px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 991px){
+  .gubarev__slovo p{
+    margin: 20px 0 10px 0;
+    font-size: 24px;
+  }
+  .header__gubarev{
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    h2{
+      margin: 0;
+      font-size: 20px;
+      b{
+        font-size: 20px;
+      }
+    }
+  }
+  .header__gubarev__social{
+    height: 35px;
+    margin: 15px;
+  }
+  #gubarev__slovo{
+    background-position-x: 50px;
+  }
+  .gubarev__slovo{
+    h3{
+      font-size: 32px;
+      &:before{
+        left: 265px;
+      }
+    }
+  }
+  #gubarev-accost{
+    height: auto;
+    .row{
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+  .gubarev-accost{
+    &__foto{
+      height: 330px;
+      img{
+        height: auto;
+        width: 100%;
+        left: 0;
+      }
+    }
+    &__text{
+      height: 500px;
+      &__wrapper{
+        height: 338px;
+      }
+    }
+  }
+  .biography{
+    &__header{
+      padding-left: 0;
+      margin-bottom: 30px;
+    }
+    &__tabs{
+      padding-left: 0;
+      padding-right: 0;
+      margin-left: -25px;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    &__content{
+      height: 400px;
+      &__point{
+        height: 400px;
+        width: 100%;
+      }
+    }
+    &__news{
+      &__card{
+        &__img{
+          height: 145px;
+        }
+      }
+    }
+  }
+  .btn-tabs{
+    margin: 0 20px;
+    font-size: 17px;
+  }
+  #call-back,#call-back-2{
+    .row{
+      flex-direction: column;
+      height: 55px;
+      div:first-of-type{
+        min-height: 55px;
+      }
+      div:nth-of-type(2){
+        position: relative;
+        top: -10px;
+      }
+      div:nth-of-type(3){
+        position: relative;
+        top: 10px;
+      }
+    }
+    h2{
+      margin-bottom: 25px;
+    }
+  }
+  .news-blog{
+    &__body{
+      &__card{
+        width: 48%;
+      }
+    }
+  }
+  .team{
+    &__body{
+      &__card{
+        width: 345px;
+      }
+    }
+  }
+  .footer__body__point {
+    width: 47%;
+  }
+}
+@media screen and (max-width: 767px){
+  .news-blog__body__card__img{
+    height: 145px;
+  }
+  #call-back,#call-back-2{
+    .row{
+      div:nth-of-type(2){
+        display: inline-flex;
+      }
+      div:nth-of-type(3){
+        display: inline-flex;
+      }
+    }
+  }
+  .header__gubarev__blue-block:before{
+    z-index: -1;
+    width: 130vw;
+    transform: translateX(-20%);
+  }
+  #header__gubarev{
+    height: 150px;
+  }
+  .header__gubarev{
+    margin-top: 10px;
+    &__social{
+      display: none;
+    }
+  }
+  #header__gubarev{
+    .btn-ghost__red{
+      display: none;
+    }
+  }
+  #gubarev__slovo{
+    margin-top: 153px;
+    height: 640px;
+  }
+  .gubarev__slovo{
+    h3{
+      font-size: 32px;
+      text-align: center;
+      &:before{
+        left: 800px;
+      }
+    }
+    h2{
+      font-size: 40px;
+      text-align: center;
+    }
+    p{
+      font-size: 26px;
+      line-height: 36px;
+    }
+    &__foto{
+      top: 325px;
+      left: -129px;
+      background-size: 740px;
+    }
+  }
+  #nav-bar{
+    display: none;
+  }
+  #gubarev-accost{
+    margin-top: 0;
+  }
+  .gubarev-accost{
+    &__foto{
+      height: 240px;
+    }
+  }
+  .biography{
+    &__tabs{
+      margin-bottom: 20px;
+    }
+    &__news{
+      flex-wrap: wrap;
+      &__card{
+        width: calc(50% - 20px);
+      }
+    }
+  }
+  .quote {
+    padding: 0 15px;
+  }
+  .call-back__social{
+    margin: 10px 0;
+  }
+  .team{
+    &__body{
+      padding-top: 30px;
+      &__card{
+        width: calc(50% - 15px);
+        height: 330px;
+        &__face{
+          top: -180px;
+          img{
+            top: 175px;
+          }
+        }
+      }
+    }
+  }
+  .footer__header{
+    padding: 0 10px;
+  }
+  .footer__body{
+    padding: 0 25px;
+    &__point{
+      width: 100%;
+    }
+  }
+  #call-back .row, #call-back-2 .row{
+    flex-direction: row;
+    height: auto;
+  }
+  #call-back .row div:nth-of-type(3), #call-back-2 .row div:nth-of-type(3){
+    top: -5px;
+  }
+  #mobil-menu{
+    label{
+      display: block;
+    }
+  }
+  .pop-up{
+    &__news,&__deputats,&__call-back{
+      width: 100%;
+    }
+    &__news{
+      &__header{
+        padding: 40px 30px 20px 30px;
+      }
+      &__body{
+        padding: 0px 30px;
+        &__img{
+          width: calc(100% + 60px);
+          left: -30px;
+        }
+        &__video{
+          padding: 20px;
+        }
+      }
+      &__footer{
+        padding: 30px;
+        p{
+          margin-right: 15px;
+        }
+        a{
+          margin-right: 7px;
+          padding: 8px 12px 0 12px;
+        }
+      }
+    }
+    &__deputats{
+      padding: 40px 20px 25px 30px;
+      &__left{
+        width: 35%;
+      }
+      &__right{
+        width: calc(65% - 40px);
+        ul{
+          padding-right: 20px;
+        }
+      }
+    }
+    &__call-back{
+      padding: 45px 30px 30px 30px;
+      &__body{
+        &__input{
+          width: 45%;
+          &__wrapp{
+            padding: 5px 10px;
+          }
+        }
+      }
+    }
+  }
+  .program__body__point__body ul{
+    padding-right: 20px;
+  }
+  .program__body{
+    padding: 0;
+  }
+  .program__header{
+    padding-left: 0;
+  }
+  .news-mod .pop-up__news{
+    top: 104px;
+  }
+  }
+@media screen and (max-width: 574px){
+  .gubarev__slovo{
+    padding-top: 20px;
+    h2{
+      font-size: 34px;
+      line-height: 38px;
+    }
+    p{
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+  .gubarev-accost{
+    &__foto{
+      height: 66vw;
+    }
+    &__text{
+      padding: 25px;
+      height: 530px;
+    }
+  }
+  #biography{
+    padding-top: 20px;
+  }
+  .biography{
+    &__header{
+      padding-left: 15px;
+    }
+    &__tabs{
+      padding-left: 15px;
+    }
+    &__news{
+      &__card{
+        width: 100%;
+      }
+    }
+  }
+  #call-back .row div:nth-of-type(3), #call-back-2 .row div:nth-of-type(3){
+    top: -5px;
+  }
+  #call-back, #call-back-2{
+    padding: 25px 0 10px 15px;
+  }
+  .news-blog__header{
+    padding: 0 25px;
+  }
+  .news-blog{
+    &__body{
+      justify-content: center;
+      &__card{
+        width: 90%;
+      }
+    }
+  }
+  .pop-up{
+    &__news{
+      &__header{
+        padding: 40px 20px 10px 20px;
+      }
+      &__body{
+        padding: 0px 20px;
+        &__img{
+          width: calc(100% + 40px);
+          left: -20px;
+        }
+        &__video{
+          padding: 0;
+          margin-bottom: 20px;
+          img{
+            width: 100%;
+          }
+        }
+      }
+      &__footer{
+        padding: 20px;
+        p{
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+    &__deputats{
+      height: 100%;
+      padding: 40px 20px 20px 20px;
+      &__left{
+        width: 100%;
+        margin-bottom: 0;
+        &__img{
+          left: 50%;
+          transform: translateX(-50%);
+        }
+        > a{
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+      &__right{
+        width: 100%;
+      }
+    }
+    &__call-back{
+      padding: 40px 20px 20px 20px;
+      height: 100%;
+      &__body{
+        height: auto;
+        &__input{
+          width: 100%;
+        }
+      }
+    }
+  }
+  body{
+    overflow-x: hidden;
+  }
+  .team{
+    &__header{
+      h2{
+        padding-left: 10px;
+      }
+    }
+    &__body{
+      justify-content: center;
+      &__card{
+        width: 300px;
+      }
+    }
+  }
+  .pop-up__call-back__body__input p{
+    display: none;
+  }
+  .pop-up__call-back__body__input{
+    margin-bottom: 5px;
+  }
+  .pop-up__call-back button{
+    margin: 20px auto 0 auto;
+  }
+  .pop-up__call-back{
+    padding: 10px 20px 20px 20px;
+  }
+  .pop-up__deputats{
+    padding: 15px 20px 20px 20px;
+  }
+  .pop-up__deputats__left > a{
+    margin-top: 8px;
+  }
+  .pop-up__deputats__left h3{
+    margin-top: 3px;
+    margin-bottom: 7px;
+  }
+  .pop-up__deputats__right ul{
+    height: 202px;
+  }
+  .pop-up__deputats__right h2{
+    margin-bottom: 10px;
+  }
+  #program{
+    padding-top: 50px;
+    h2{
+      text-align: center;
+    }
+  }
+}
+@media screen and (max-height: 360px){
+  .header__gubarev{
+    display: none;
+  }
+  #header__gubarev{
+       height: 75px;
+  }
+}
