@@ -1,1 +1,0 @@
-cmd "gem install sass" "gem install compass" "d:" "cd makeup/project" "compass init"
