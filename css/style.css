@@ -4,16 +4,688 @@ button, button:active, button:hover, button:visited, button:focus {
   cursor: pointer;
 }
 
+/* line 5, ../sass/_btn.scss */
+.btn-slash {
+  display: inline-block;
+  background-color: #F1CB30;
+  padding: 2px 12px;
+  transform: skewX(-20deg);
+  border-radius: 3px;
+  box-shadow: 1px 1.73px 0px rgba(0, 0, 0, 0.2);
+  border: solid 2px transparent;
+}
+/* line 13, ../sass/_btn.scss */
+.btn-slash:hover {
+  background-color: #000000;
+  border: solid 2px #F1CB30;
+}
+/* line 16, ../sass/_btn.scss */
+.btn-slash:hover span {
+  color: #ffffff;
+}
+/* line 19, ../sass/_btn.scss */
+.btn-slash:hover i {
+  background-color: #F1CB30;
+}
+/* line 23, ../sass/_btn.scss */
+.btn-slash span {
+  transform: skewX(20deg);
+  color: #000000;
+  display: inline-block;
+}
+/* line 28, ../sass/_btn.scss */
+.btn-slash i {
+  transform: skewX(20deg);
+  color: #000000;
+  display: inline-block;
+  background-color: #EFEFEF;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  margin: 0 7px;
+  padding: 0 5px;
+}
+
+/* line 40, ../sass/_btn.scss */
+.btn__control {
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 23px;
+  height: 50px;
+  background-color: #000000;
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+/* line 53, ../sass/_btn.scss */
+.btn__control:hover i {
+  color: #F1CB30;
+}
+/* line 57, ../sass/_btn.scss */
+.btn__control i {
+  color: #ffffff;
+  font-size: 36px;
+}
+
+/* line 62, ../sass/_btn.scss */
+.btn-ghost {
+  background-color: transparent;
+  border: solid 2px #F1CB30;
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 2px 14px;
+  margin: 30px auto 0 auto;
+  display: block;
+  border-radius: 5px;
+}
+/* line 73, ../sass/_btn.scss */
+.btn-ghost:hover {
+  background-color: #000000;
+  color: #F1CB30;
+}
+
 /* line 4, ../sass/style.scss */
 body {
   height: 100%;
   margin: 0;
   padding: 0;
+  background-color: #EFEFEF;
 }
 
-/* line 9, ../sass/style.scss */
+/* line 10, ../sass/style.scss */
+header {
+  position: relative;
+  padding-top: 40px;
+}
+
+/* line 14, ../sass/style.scss */
+#background__top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+/* line 23, ../sass/style.scss */
+.background__top__left {
+  width: 382px;
+  height: 842px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../img/tree-top-left.png") no-repeat;
+  background-size: contain;
+}
+/* line 32, ../sass/style.scss */
+.background__top__right {
+  width: 532px;
+  height: 1208px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url("../img/tree-top-right.png") no-repeat;
+  background-size: contain;
+}
+
+/* line 43, ../sass/style.scss */
 a, a:hover, a:visited, a:focus {
   text-decoration: none;
   color: inherit;
   outline: none !important;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+/* line 50, ../sass/style.scss */
+span {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000000;
+}
+
+/* line 56, ../sass/style.scss */
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000000;
+}
+
+/* line 62, ../sass/style.scss */
+li {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000000;
+}
+
+/* line 68, ../sass/style.scss */
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #000000;
+}
+
+/* line 74, ../sass/style.scss */
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+}
+
+/* line 81, ../sass/style.scss */
+.default-text p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000000;
+}
+/* line 87, ../sass/style.scss */
+.default-text li {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000000;
+}
+/* line 93, ../sass/style.scss */
+.default-text h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #000000;
+}
+/* line 99, ../sass/style.scss */
+.default-text h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+}
+
+/* line 107, ../sass/style.scss */
+.header__top {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background-color: #000000;
+}
+/* line 108, ../sass/style.scss */
+.header__top .row {
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+}
+/* line 121, ../sass/style.scss */
+.header__top nav a {
+  display: inline-block;
+}
+/* line 125, ../sass/style.scss */
+.header__top ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+/* line 129, ../sass/style.scss */
+.header__top ul li {
+  color: #ffffff;
+  display: inline-block;
+  margin-right: 30px;
+  position: relative;
+}
+/* line 135, ../sass/style.scss */
+.header__top ul li:hover a {
+  color: #F1CB30;
+}
+/* line 139, ../sass/style.scss */
+.header__top ul li:before {
+  content: "";
+  position: absolute;
+  right: -16px;
+  top: 4px;
+  width: 1px;
+  height: 14px;
+  background-color: #ffffff;
+}
+/* line 148, ../sass/style.scss */
+.header__top ul li:last-of-type:before {
+  display: none;
+}
+/* line 153, ../sass/style.scss */
+.header__top__user {
+  display: inline-block;
+  height: 24px;
+}
+/* line 157, ../sass/style.scss */
+.header__top__user:hover span {
+  color: #F1CB30;
+  border-bottom: dashed #F1CB30 1px;
+}
+/* line 162, ../sass/style.scss */
+.header__top__user span {
+  margin-left: 10px;
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: top;
+  border-bottom: dashed #ffffff 1px;
+}
+/* line 171, ../sass/style.scss */
+.header__nav-bar {
+  margin-top: 30px;
+}
+/* line 173, ../sass/style.scss */
+.header__nav-bar__body {
+  background-color: #000000;
+  height: 80px;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  left: 15px;
+}
+/* line 181, ../sass/style.scss */
+.header__nav-bar__body__nav-bar ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+/* line 188, ../sass/style.scss */
+.header__nav-bar__body__nav-bar ul li {
+  display: inline-block;
+  color: #ffffff;
+}
+/* line 190, ../sass/style.scss */
+.header__nav-bar__body__nav-bar ul li:hover p, .header__nav-bar__body__nav-bar ul li:hover i {
+  color: #F1CB30;
+}
+/* line 194, ../sass/style.scss */
+.header__nav-bar__body__nav-bar ul li i {
+  font-size: 20px;
+}
+/* line 198, ../sass/style.scss */
+.header__nav-bar__body__nav-bar ul li.active i, .header__nav-bar__body__nav-bar ul li.active p {
+  color: #F1CB30;
+}
+/* line 204, ../sass/style.scss */
+.header__nav-bar__body__nav-bar ul li p {
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0;
+}
+/* line 213, ../sass/style.scss */
+.header__nav-bar__body__call-back a {
+  float: right;
+}
+/* line 218, ../sass/style.scss */
+.header__nav-bar__ticker {
+  position: relative;
+  left: 15px;
+  flex-wrap: nowrap;
+  padding: 0;
+  height: 35px;
+  background-color: #FCF5D6;
+  overflow: hidden;
+}
+/* line 226, ../sass/style.scss */
+.header__nav-bar__ticker p {
+  height: 100%;
+  display: inline-block;
+  white-space: nowrap;
+  line-height: 35px;
+  margin: 0 20px;
+  position: relative;
+}
+
+/* line 237, ../sass/style.scss */
+#slider {
+  margin-top: 30px;
+}
+
+/* line 240, ../sass/style.scss */
+.slider {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+/* line 244, ../sass/style.scss */
+.slider__watch-area {
+  position: relative;
+  height: 300px;
+  background-color: #000000;
+}
+/* line 248, ../sass/style.scss */
+.slider__watch-area__control {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+/* line 255, ../sass/style.scss */
+.slider__watch-area__control .btn__control:first-of-type {
+  left: 0;
+}
+/* line 258, ../sass/style.scss */
+.slider__watch-area__control .btn__control:last-of-type {
+  right: 0;
+}
+/* line 263, ../sass/style.scss */
+.slider__watch-area__content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+/* line 267, ../sass/style.scss */
+.slider__watch-area__content img {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* line 276, ../sass/style.scss */
+.slider__control {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+/* line 280, ../sass/style.scss */
+.slider__control__circle {
+  width: 16px;
+  height: 16px;
+  background-color: #1A2127;
+  opacity: 0.3;
+  padding: 0;
+  margin: 0;
+  border: solid 3px #ffffff;
+  border-radius: 50%;
+}
+/* line 289, ../sass/style.scss */
+.slider__control__circle:hover {
+  border: solid 3px #1A2127;
+}
+/* line 292, ../sass/style.scss */
+.slider__control__circle.active {
+  border: solid 3px #1A2127;
+  opacity: 1;
+  background-color: transparent;
+}
+
+/* line 300, ../sass/style.scss */
+#tattoo {
+  padding-top: 50px;
+}
+
+/* line 305, ../sass/style.scss */
+.tattoo__header__tabs {
+  margin-right: 20px;
+  display: inline-block;
+}
+/* line 308, ../sass/style.scss */
+.tattoo__header__tabs.active {
+  font-weight: 500;
+  border-bottom: solid 3px #F1CB30;
+}
+/* line 313, ../sass/style.scss */
+.tattoo__header__all {
+  display: none;
+  float: right;
+}
+/* line 316, ../sass/style.scss */
+.tattoo__header__all i {
+  font-size: 17px;
+  font-weight: 600;
+  margin-left: 8px;
+}
+/* line 321, ../sass/style.scss */
+.tattoo__header__all.active {
+  display: inline-block;
+}
+/* line 325, ../sass/style.scss */
+.tattoo__header a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+  line-height: 34px;
+}
+/* line 332, ../sass/style.scss */
+.tattoo__header a:hover {
+  font-weight: 500;
+}
+/* line 337, ../sass/style.scss */
+.tattoo__body {
+  margin-top: 30px;
+}
+/* line 339, ../sass/style.scss */
+.tattoo__body__news, .tattoo__body__top {
+  display: none;
+}
+/* line 341, ../sass/style.scss */
+.tattoo__body__news.active, .tattoo__body__top.active {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+/* line 347, ../sass/style.scss */
+.tattoo__body__card {
+  margin: 0 30px 30px 0;
+  height: 312px;
+  width: calc((100% - 60px) / 3);
+  background-color: grey;
+  position: relative;
+}
+/* line 353, ../sass/style.scss */
+.tattoo__body__card:nth-child(3n) {
+  margin: 0 0 30px 0;
+}
+/* line 356, ../sass/style.scss */
+.tattoo__body__card__sticker {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+/* line 363, ../sass/style.scss */
+.tattoo__body__card__sticker__new {
+  display: none;
+  position: absolute;
+  top: 3px;
+  z-index: auto;
+  left: -7px;
+  height: 20px;
+  width: 45px;
+  line-height: 18px;
+  padding-left: 12px;
+  font-size: 14px;
+  font-style: italic;
+  background-color: #B6002D;
+  color: #ffffff;
+}
+/* line 377, ../sass/style.scss */
+.tattoo__body__card__sticker__new.active {
+  display: block;
+}
+/* line 380, ../sass/style.scss */
+.tattoo__body__card__sticker__new:before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 7px;
+  height: 100%;
+  background-color: #56001E;
+  z-index: -1;
+  transform: skewY(40deg);
+}
+/* line 391, ../sass/style.scss */
+.tattoo__body__card__sticker__new:after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  right: -7px;
+  z-index: -1;
+  width: 14px;
+  height: 14px;
+  background-color: #B6002D;
+  transform: rotate(45deg);
+}
+/* line 403, ../sass/style.scss */
+.tattoo__body__card__sticker__like {
+  position: absolute;
+  cursor: pointer;
+  right: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  background-color: #A9AABB;
+}
+/* line 411, ../sass/style.scss */
+.tattoo__body__card__sticker__like.active {
+  background-color: #F1CB30;
+}
+/* line 413, ../sass/style.scss */
+.tattoo__body__card__sticker__like.active i {
+  color: #000000;
+}
+/* line 418, ../sass/style.scss */
+.tattoo__body__card__sticker__like:hover i {
+  color: #B6002D;
+}
+/* line 422, ../sass/style.scss */
+.tattoo__body__card__sticker__like i {
+  color: #ffffff;
+  font-size: 17px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+/* line 431, ../sass/style.scss */
+.tattoo__body__card__sticker__loupe {
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+/* line 442, ../sass/style.scss */
+.tattoo__body__card__sticker__loupe i {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  font-size: 16px;
+  color: #F1CB30;
+}
+/* line 452, ../sass/style.scss */
+.tattoo__body__card__foto {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+/* line 457, ../sass/style.scss */
+.tattoo__body__card__foto img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+}
+/* line 465, ../sass/style.scss */
+.tattoo__body__card__info {
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  bottom: 0;
+  z-index: 2;
+  left: 0;
+  background-color: #22262B;
+  transition: all linear 0.2s;
+}
+/* line 474, ../sass/style.scss */
+.tattoo__body__card__info:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: -10px;
+  left: 22px;
+  transform: rotate(45deg);
+  background-color: #22262B;
+}
+/* line 484, ../sass/style.scss */
+.tattoo__body__card__info__wrapp {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  padding: 12px 20px;
+}
+/* line 489, ../sass/style.scss */
+.tattoo__body__card__info__wrapp h3 {
+  transition: all linear 0.2s;
+  font-family: 'Roboto',sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #FECC02;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+/* line 498, ../sass/style.scss */
+.tattoo__body__card__info__wrapp a {
+  display: block;
+  font-family: 'Roboto',sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+/* line 506, ../sass/style.scss */
+.tattoo__body__card__info__wrapp span {
+  font-family: 'Roboto',sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #BABABA;
+  display: inline-block;
+}
+/* line 512, ../sass/style.scss */
+.tattoo__body__card__info__wrapp span i {
+  color: #ffffff;
+  font-size: 16px;
+  margin-right: 10px;
+}
+/* line 521, ../sass/style.scss */
+.tattoo__body__card:hover .tattoo__body__card__sticker__loupe {
+  display: block;
+}
+/* line 524, ../sass/style.scss */
+.tattoo__body__card:hover .tattoo__body__card__info {
+  height: 100px;
+}
+/* line 526, ../sass/style.scss */
+.tattoo__body__card:hover .tattoo__body__card__info h3 {
+  margin-bottom: 10px;
+  margin-top: 0;
 }
