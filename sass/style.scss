@@ -102,6 +102,12 @@ h3{
     font-weight: 400;
     color: #000000;
   }
+  h4{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000000;
+  }
 }
 .header{
   &__top{
@@ -350,6 +356,7 @@ h3{
       width: calc((100% - 60px) / 3);
       background-color: grey;
       position: relative;
+      cursor: pointer;
       &:nth-child(3n){
         margin: 0 0 30px 0;
       }
@@ -363,7 +370,7 @@ h3{
         &__new{
           display: none;
           position: absolute;
-          top: 3px;
+          top: 6px;
           z-index: auto;
           left: -7px;
           height: 20px;
@@ -532,5 +539,259 @@ h3{
     }
   }
 }
-
+#salon{
+  padding-top: 30px;
+}
+.salon{
+  &__header{
+    &__tabs{
+      margin-right: 20px;
+      display: inline-block;
+      &.active{
+        font-weight: 500;
+        border-bottom: solid 3px $color-yellow;
+      }
+    }
+    &__all{
+      display: none;
+      float: right;
+      i{
+        font-size: 17px;
+        font-weight: 600;
+        margin-left: 8px;
+      }
+      &.active{
+        display: inline-block;
+      }
+    }
+    a{
+      font-family: 'Roboto', sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      color: #000000;
+      text-transform: uppercase;
+      line-height: 34px;
+      &:hover{
+        font-weight: 500;
+      }
+    }
+  }
+  &__body{
+    margin-top: 30px;
+    &__news,&__top{
+      display: none;
+      &.active{
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+      }
+    }
+    &__card{
+      margin: 0 30px 30px 0;
+      height: 372px;
+      width: calc((100% - 60px) / 3);
+      background-color: #ffffff;
+      position: relative;
+      cursor: pointer;
+      &:nth-child(3n){
+        margin: 0 0 30px 0;
+      }
+      &__sticker{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        &__new{
+          display: none;
+          position: absolute;
+          top: 11px;
+          z-index: auto;
+          left: -7px;
+          height: 20px;
+          width: 45px;
+          line-height: 18px;
+          padding-left: 12px;
+          font-size: 14px;
+          font-style: italic;
+          background-color: #B6002D;
+          color: #ffffff;
+          &.active{
+            display: block;
+          }
+          &:before{
+            content: "";
+            position: absolute;
+            top: 3px;
+            left: 0;
+            width: 7px;
+            height: 100%;
+            background-color: #56001E;
+            z-index: -1;
+            transform: skewY(40deg);
+          }
+          &:after{
+            content: "";
+            position: absolute;
+            top: 3px;
+            right: -7px;
+            z-index: -1;
+            width: 14px;
+            height: 14px;
+            background-color: #B6002D;
+            transform: rotate(45deg);
+          }
+        }
+        &__favorit{
+          position: absolute;
+          cursor: pointer;
+          right: 0;
+          top: 195px;
+          width: 30px;
+          height: 30px;
+          background-color: #A9AABB;
+          &.active{
+            background-color: $color-yellow;
+            i{
+              color: #000000;
+            }
+          }
+          &:hover{
+            i{
+              color: #B6002D;
+            }
+          }
+          i{
+            color: #ffffff;
+            font-size: 17px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+          }
+        }
+      }
+      &__foto{
+        overflow: hidden;
+        width: 100%;
+        height: 195px;
+        position: relative;
+        img{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          height: calc(100% - 40px);
+        }
+      }
+      &__info{
+        width: 100%;
+        height: 177px;
+        bottom: 0;
+        z-index: 2;
+        left: 0;
+        background-color: #ffffff;
+        &__wrapp{
+          overflow: hidden;
+          width: 100%;
+          height: 100%;
+          padding: 12px 20px;
+          h3{
+            font-family: 'Roboto',sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            color: #1B2127;
+            margin-top: 10px;
+            margin-bottom: 20px;
+          }
+          p{
+            display: block;
+            font-family: 'Roboto',sans-serif;
+            font-weight: 400;
+            font-size: 12px;
+            color: #9B9B9B;
+            margin-bottom: 5px;
+            position: relative;
+            padding-left: 30px;
+            u{
+              text-decoration: none;
+              font-size: 16px;
+              color: #1B2127;
+              font-weight: 500;
+            }
+            i{
+              position: absolute;
+              font-size: 17px;
+              top: 0;
+              left: 0;
+              color: #1B2127;
+            }
+          }
+          span{
+            font-family: 'Roboto',sans-serif;
+            font-weight: 500;
+            font-size: 13px;
+            color: #1B2127;
+            display: block;
+            position: relative;
+            padding-left: 30px;
+            i{
+              color: #1B2127;
+              font-size: 18px;
+              display: block;
+              position: absolute;
+              top: 0;
+              left: 0;
+            }
+          }
+        }
+      }
+      &:hover{
+        .salon__body__card__foto{
+          background-color: #FFB3B3;
+        }
+      }
+    }
+  }
+}
+#about{
+  margin-top: 20px;
+  h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  h4{
+    margin-bottom: 15px;
+  }
+  ul{
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+    li{
+      margin-bottom: 15px;
+      position: relative;
+      padding-left: 23px;
+      &:before{
+        content: "\f00c";
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: #000000;
+        font-family: FontAwesome;
+      }
+    }
+  }
+}
+footer{
+  position: relative;
+}
+.footer{
+  background-color: #000000;
+  padding: 40px 0;
+  &-block{
+    background-color: #1B2127;
+    padding: 45px 0;
+  }
+}
 @import "media";
